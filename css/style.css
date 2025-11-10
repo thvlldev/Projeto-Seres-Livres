@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar-header {
+    background-color: #DDD9CE !important;
+}
+
+.nhistoria {
+    width: 115pt;
+}
+
+.nav-item {
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
+.nav-item a:hover {
+    color: #D97E96;
+    transition: 0.3s;
+}
+
+.font-h2 {
+    font-family: 'Fraunces';
+    font-weight: 600;
+    font-size:3rem;
+}
+
+
+.esperanca {
+    color: #D97E96;
+}
+
+.botao-adote {
+    background-color: #D97E96;
+    color: white;
+    width: 11rem;
+    padding: 0.5rem 0;
+    border-radius: 0.75rem;
+    font-family: 'Open Sans';
+    font-weight: bolder;
+    border-style: solid;
+    border-color: #D97E96;
+}
+
+.botao-adote:hover {
+    background-color: white;
+    color: #D97E96;
+    border-style: solid;
+    border-color: #D97E96;
+}
+
+.texto-poppins {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.nossa-historia {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.nossa-historia-bck {
+    background-color: #DDD9CE;
+    display: flex;
+    padding: 0rem 2.5rem;
+}
+
+.texto-historia {
+    font-weight: 300;
+}
+
+.cards-espaco {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.acordeao-itens {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.acordeao-configs .accordion-item:first-of-type {
+    border-top: none;
+}
+
+.acordeao-configs .accordion-item {
+    border-left: none;
+    border-right: none;
+}
+
+

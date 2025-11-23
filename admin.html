@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        
+        <header class="bck-header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-header">
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5 img-icon" href="home.html">
+                        <img src="img/Marca Seres Livres_vertical.png" alt="Logo Seres Livres" width="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adocao.html">ADOÇÃO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">DOAÇÕES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nhistoria" href="home.html#id-historia">NOSSA HISTÓRIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#id-contato">CONTATO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#id-faq">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#id-parceiros">PARCERIAS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center mt-4 nome-fonte">SEJA BEM VINDO</h3>
+                </div>
+
+                <div class="col-12">
+                    <img src="img/Marca Seres Livres_vertical_FINAL-03.png" alt="Desenho de dois gatos e logo Seres Livres"
+                        class="img-projeto img-fluid mx-auto d-block mt-2">
+                </div>
+            </div>
+
+            <div class="row" id="form">
+                <div class="col-12 col-md-4 mx-auto mt-4">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputLogin" class="form-label visually-hidden">E-mail</label>
+                            
+                            <input type="text" class="form-control input-form" id="inputLogin" placeholder="E-mail" aria-describedby="loginHelp">
+                            <div id="loginHelp" class="form-text"></div>
+                        </div>
+
+                        <div class="mb-3">
+                             <label for="inputPassword" class="form-label visually-hidden">Senha</label>
+                            
+                            <input type="password" class="form-control input-form" id="inputPassword" placeholder="Senha">
+                            <a href="#" class="esqueceu-senha d-block text-end mt-1">Esqueceu a senha?</a>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn mt-4 botao-adote">INICIAR SESSÃO</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            </main>
+        <footer>
+
+            <div class="row bck-footer d-flex" id="id-contato">
+                <div class="col-12 col-md-4 mx-auto d-flex justify-content-center itens-footer">
+                    <img src="img/Marca Seres Livres_vertical_FINAL-03.png" class="logo-footer" alt="Logo Seres Livres"
+                        loading="lazy">
+                </div>
+                <div class="col-12 col-md-4 text-center itens-footer">
+                    <ul>
+                        <li><a href="adocao.html">Adoções</a></li>
+                        <li><a href="">Doações</a></li>
+                        <li><a href="#id-historia">Nossa História</a></li>
+                        <li><a href="#id-parceiros">Parcerias</a></li>
+                        <li><a href="">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mx-auto itens-footer">
+                    <div class="img-texto my-3"><img src="img/whatsapp.png" class="img-footer" alt="Ícone Whatsapp">
+                        <h6>(21)97228-5278</h6>
+                    </div>
+                    <div class="img-texto my-3"><img src="img/instagram.png" class="img-footer" alt="Ícone Instagram">
+                        <h6>@sereslivres</h6>
+                    </div>
+                    <div class="img-texto my-3"><img src="img/gmail.png" alt="Ícone Email" class="img-footer">
+                        <h6>casadeapoiosereslivres@gmail.com</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 bck-copyright">
+                    <h5 class="text-center mt-2">Copyright © 2025 - Todos os direitos reservados.</h5>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

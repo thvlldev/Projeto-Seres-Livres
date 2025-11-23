@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adoção</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-header">
+                        <div class="container-fluid">
+                            <a class="navbar-brand ms-5 img-icon" width="10" href="home.html"><img
+                                    src="img/Marca Seres Livres_vertical.png" alt="" width="100"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto gap-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="home.html">HOME</a>
+                                    </li>
+
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" aria-current="page" href="adocao.html">ADOÇÃO</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="doacoes.html">DOAÇÕES</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link nhistoria" href="home.html#id-historia">NOSSA HISTÓRIA</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="home.html#id-contato">CONTATO</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="home.html#id-faq">FAQ</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="home.html#id-parceiros">PARCERIAS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+    <section id="banner-adocao" class="container-fluid py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="font-h2">Encontre seu Novo Melhor Amigo</h1>
+                <p class="texto-poppins">Cães e Gatos aguardam uma família <span class="esperanca">amorosa</span> no Seres Livres.</p>
+                <img src="img/Grupo gatinhos.jpg" class="img-fluid my-4 banner-adocao" alt="Três filhotes juntos.">
+            </div>
+        </div>
+    </section>
+
+    <section id="listagem-animais" class="container py-5">
+        
+        <h2 class="nossa-historia text-center mb-5">Nossos Seres Livres para Adoção</h2>
+        
+        <div class="row mb-5">
+            <div class="col-12 d-flex justify-content-center gap-4">
+                <button class="botao-adote btn-filtro" data-filter="todos">Todos</button>
+                <button class="botao-adote btn-filtro" data-filter="caes">Cães</button>
+                <button class="botao-adote btn-filtro" data-filter="gatos">Gatos</button>
+            </div>
+        </div>
+        
+        <div id="grid-animais" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+            
+            <div class="col animal-card caes" data-especie="caes">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/cachorro-fred.jpg" class="card-img-top" alt="Cão Fred">
+                    <div class="card-body">
+                        <h5 class="nome-fonte card-title">Fred</h5>
+                        <p class="texto-card-fonte card-text">Porte médio, 2 anos. Adora brincar de buscar bolinhas e é ideal para casas com jardim.</p>
+                        <a href="#" class="botao-imagem-card">ADOTE!</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col animal-card gatos" data-especie="gatos">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/gata-luna.jpg" class="card-img-top" alt="Gata Luna">
+                    <div class="card-body">
+                        <h5 class="nome-fonte card-title">Luna</h5>
+                        <p class="texto-card-fonte card-text">Fêmea, 1 ano. Calma, dorminhoca e se dá bem com crianças. Precisa de castração.</p>
+                        <a href="#" class="botao-imagem-card">ADOTE!</a>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </section>
+
+    <hr>
+
+    <section id="finais-felizes" class="container py-5">
+        <h2 class="nossa-historia text-center mb-5">Nossos Finais Felizes</h2>
+        
+        <div class="row justify-content-center">
+            
+            <div class="col-md-5 mb-4 text-center">
+                <img src="img/cachorro-adotado.jpg" class="img-fluid rounded-circle mb-3" width="150" alt="Foto de um relato de adoção.">
+                <p class="texto-historia">"Meu filho adorou o Adolfo! Nota 10!"</p>
+                <p class="texto-card-fonte">- Família Silva</p>
+            </div>
+            
+            <div class="col-md-5 mb-4 text-center">
+                <img src="img/gato-adotado.jpg" class="img-fluid rounded-circle mb-3" width="150" alt="Foto de outro relato de adoção.">
+                <p class="texto-historia">"Estou muito feliz, obrigada Seres Livres."</p>
+                <p class="texto-card-fonte">- João Carlos</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="faq" class="container py-5">
+        <h2 class="nossa-historia text-center mb-4">Dúvidas Frequentes</h2>
+        <div class="accordion acordeao-configs mx-auto" style="max-width: 800px;">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button acordeao-itens" type="button" data-bs-toggle="collapse" data-bs-target="#faq-adocao" aria-expanded="true">
+                        Quero adotar, como faço?
+                    </button>
+                </h2>
+                <div id="faq-adocao" class="accordion-collapse collapse show">
+                    <div class="accordion-body texto-card-fonte">
+                        O processo de adoção começa com o preenchimento do nosso formulário online. Após a análise e aprovação, agendaremos uma visita à sua residência.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button acordeao-itens collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-doacao" aria-expanded="false">
+                        Gostaria de realizar uma doação. Qual é o passo a passo?
+                    </button>
+                </h2>
+                <div id="faq-doacao" class="accordion-collapse collapse">
+                    <div class="accordion-body texto-card-fonte">
+                        Aceitamos doações em dinheiro (via Pix ou transferência) e doações de suprimentos (ração, medicamentos, cobertores). Veja mais detalhes na seção "Doações".
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button acordeao-itens collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-resgate" aria-expanded="false">
+                        Vocês fazem resgate? Quais são os requisitos?
+                    </button>
+                </h2>
+                <div id="faq-resgate" class="accordion-collapse collapse">
+                    <div class="accordion-body texto-card-fonte">
+                        Não somos um serviço de resgate emergencial, mas podemos ajudar a divulgar e orientar em casos de animais em situação de risco, dependendo da nossa capacidade de abrigo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button acordeao-itens collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-parceria" aria-expanded="false">
+                        Represento uma empresa e tenho interesse em firmar uma parceria. Como proceder?
+                    </button>
+                </h2>
+                <div id="faq-parceria" class="accordion-collapse collapse">
+                    <div class="accordion-body texto-card-fonte">
+                        Entre em contato diretamente pelo e-mail: casadeapoiosereslivres@gmail.com.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</main>
+
+        <footer>
+
+            <div class="row bck-footer d-flex" id="id-contato">
+                <div class="col-12 col-md-4 mx-auto d-flex justify-content-center itens-footer">
+                    <img src="img/Marca Seres Livres_vertical_FINAL-03.png" class="logo-footer" alt="">
+                </div>
+                <div class="col-12 col-md-4 text-center itens-footer">
+                    <ul>
+                        <li><a href="adocao.html">Adoções</a></li>
+                        <li><a href="">Doações</a></li>
+                        <li><a href="#id-historia">Nossa História</a></li>
+                        <li><a href="#id-parceiros">Parcerias</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mx-auto itens-footer">
+                    <div class="img-texto my-3"><img src="img/whatsapp.png" class="img-footer" alt="">
+                        <h6>(21)4002-8922</h5>
+                    </div>
+                    <div class="img-texto my-3"><img src="img/instagram.png" class="img-footer" alt="">
+                        <h6>@sereslivres</h5>
+                    </div>
+                    <div class="img-texto my-3"><img src="img/gmail.png" alt="" class="img-footer">
+                        <h6>casadeapoiosereslivres@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 bck-copyright">
+                    <h5 class="text-center mt-2">Copyright © 2025 - Todos os direitos reservados.</h5>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/filtragem.js"></script>
+</body>
+
+</html>

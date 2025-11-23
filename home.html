@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Seres Livres</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 <body>
 
     <div class="container-fluid">
-        <header>
+        <header class="bck-header">
             <div class="row align-items-center">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-header">
@@ -38,27 +38,27 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">ADOÇÃO</a>
+                                        <a class="nav-link" aria-current="page" href="adocao.html">ADOÇÃO</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">DOAÇÕES</a>
+                                        <a class="nav-link" href="doacoes.html">DOAÇÕES</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link nhistoria" href="#">NOSSA HISTÓRIA</a>
+                                        <a class="nav-link nhistoria" href="#id-historia">NOSSA HISTÓRIA</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">CONTATO</a>
+                                        <a class="nav-link" href="#id-contato">CONTATO</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">FAQ</a>
+                                        <a class="nav-link" href="#id-faq">FAQ</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">ADMIN</a>
+                                        <a class="nav-link" href="#id-parceiros">PARCERIAS</a>
                                     </li>
                                 </ul>
                             </div>
@@ -77,7 +77,7 @@
                 <p class="text-center texto-poppins ms-2">Lorem ipsum dolor sit amet consectetur. Tristique .Morbi diam
                     sagittis purus duis. A lacus vitae commodo tempus duis at. Convallis lectus justo vulputate egestas
                     maecenas nisi eget amet. </p>
-                <button type="button" class="btn mt-4 botao-adote">ADOTE!</button>
+                <button type="button" class="btn mt-4 botao-adote" onclick="window.location.href='adocao.html'">ADOTE!</button>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column align-items-center">
                 <img src="img/Imagem do WhatsApp de 2025-11-02 à(s) 20.27.44_e2d4d6ff.jpg" width="100%" alt="">
@@ -86,7 +86,7 @@
 
 
         <div class="row nossa-historia-bck mt-4">
-            <h3 class="text-center mt-2 nossa-historia mt-4">Nossa História</h3>
+            <h3 class="text-center mt-2 nossa-historia mt-4" id="id-historia">Nossa História</h3>
         </div>
         <div class="row nossa-historia-bck text-center">
             <div class="col-12 col-md-6">
@@ -97,12 +97,13 @@
             </div>
             <div class="col-12 col-md-6 mt-4 texto-historia texto-poppins mb-4">
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorum, eligendi debitis harum eveniet
-                vitae odit magni molestias nesciunt asperiores pariatur corrupti ipsa libero obcaecati reiciendis maxime
-                beatae, dicta totam.
-                lorem
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorum, eligendi debitis harum eveniet
-                vitae odit magni
+                 Meu nome é Elaine Moura, sou formada em nutrição e, desde criança, os animais sempre fizeram parte da minha vida. Cresci cercada de cães, mas foi apenas em 2019 que os gatos entraram de em minha vida quando adotei o Draco Malfoy em uma feira de adoção. Dois meses depois, resgatei a pequena Lily em um matagal, e ali,  percebi que meu caminho seria ajudar animais em situação de vulnerabilidade.
+
+      Desde então, estudei comportamento felino, socialização de gatos arredios e cat sitter. Assim, me aproximei de protetores, ONGs e fui voluntária em lar temporário. O desejo de ter um projeto próprio de resgate cresceu naturalmente, junto com o amor pelos gatos.
+
+     Hoje, nosso trabalho já mudou muitas vidas: mais de 300 gatos e 20 cães foram doados com responsabilidade, além de inúmeras hospedagens e lares temporários — que ajudam a manter os resgatados com segurança até encontrarem suas famílias.
+
+Aqui, cada vida importa.E essa história está só começando!
 
 
 
@@ -116,135 +117,275 @@
                 <h3 class="text-center mt-2 nossa-historia my-4">Animais Disponíveis</h3>
             </div>
             <div class="row text-center justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="img/pexels-fox70-34658724.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around">
+                                <div class="card mx-auto cards-tamanho" style="width: 18rem; height: 32rem; ">
+                                    <img src="img/pexels-fox70-34658724.jpg" class="card-img-top" alt="...">
 
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="img/pexels-merve-bayar-158520570-10863556.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title nome-fonte">Alfredo</h5>
 
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="img/pexels-mahmoud-yahyaoui-28683174.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                                        <p class="card-text texto-card-fonte">Alfredo, o gato macho de 4 anos já
+                                            castrado, é a companhia
+                                            madura e tranquila que espera para encher seu lar</p>
 
+                                        <a href="#" class="btn btn-primary botao-imagem-card">QUERO ADOTAR</a>
+                                    </div>
+                                </div>
+                                <div class="card mx-auto" style="width: 18rem; height: 32rem;">
+                                    <img src="img/pexels-dorte-179237.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title nome-fonte">Thiago</h5>
+                                        <p class="card-text     texto-card-fonte">Gato castrado de 5 anos de idade.
+                                            Brincalhão, vermifugado
+                                            negativo para fiv e felv. A melhor companhia</p>
+                                        <a href="#" class="btn btn-primary botao-imagem-card">QUERO ADOTAR</a>
+
+                                    </div>
+                                </div>
+                                <div class="card mx-auto" style="width: 18rem; height: 32rem;">
+                                    <img src="img/pexels-anete-lusina-4790612.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title nome-fonte">Aninha</h5>
+                                        <p class="card-text    texto-card-fonte">Some quick example text to build on the
+                                            card title and make
+                                            up the
+                                            bulk
+                                            of
+                                            the card’s content.</p>
+                                        <a href="#" class="btn btn-primary botao-imagem-card">QUERO ADOTAR</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-wrapper container-sm d-flex   justify-content-around">
+                                <div class="card mx-auto" style="width: 18rem; height: 32rem;">
+                                    <img src="img/pexels-mahmoud-yahyaoui-28683174.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title nome-fonte">Ronaldo</h5>
+                                        <p class="card-text   texto-card-fonte">Some quick example text to build on the
+                                            card title and make
+                                            up the
+                                            bulk
+                                            of
+                                            the card’s content.</p>
+                                        <a href="#" class="btn btn-primary botao-imagem-card">QUERO ADOTAR</a>
+                                    </div>
+                                </div>
+                                <div class="card mx-auto" style="width: 18rem; height: 32rem;">
+                                    <img src="img/pexels-kelly-carson-285179239-16577560.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title nome-fonte">Kelly</h5>
+                                        <p class="card-text  texto-card-fonte">Some quick example text to build on the
+                                            card title and make
+                                            up the
+                                            bulk
+                                            of
+                                            the card’s content.</p>
+                                        <a href="#" class="btn btn-primary botao-imagem-card">QUERO ADOTAR</a>
+
+                                    </div>
+                                </div>
+                                <div class="card mx-auto" style="width: 18rem; height: 32rem;">
+                                    <img src="img/Roberto.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title nome-fonte">Roberto</h5>
+                                        <p class="card-text texto-card-fonte">Some quick example text to build on the
+                                            card title and make
+                                            up the
+                                            bulk
+                                            of
+                                            the card’s content.</p>
+                                        <a href="#" class="btn btn-primary botao-imagem-card">QUERO ADOTAR</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev botao-carrossel botao-card" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next botao-card" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
+            <!--Fechamento dos cards-->
 
+            <!--Área dos parceiros-->
 
-
-        </div>
-
-
-        <!--Fechamento dos cards-->
-
-        <!--Inicio do acordeao - FAQ-->
-        <div class="row">
-            <h3 class="text-center mt-4 nossa-historia">Perguntas Frequentes</h3>
-        </div>
-        <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="accordion acordeao-configs" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button acordeao-itens" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Como adotar um animal?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the first item’s accordion body.</strong> It is shown by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It’s also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <h3 class="text-center mt-5 nossa-historia fs-2" id="id-parceiros">Nossos Parceiros</h3>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-12 col-md-7 mx-auto d-flex justify-content-center">
+                        <a href="https://www.petz.com.br/parceiro/casereslivres" target="_blank" ><img src="img/Petz-Nova-marca-2023-removebg-preview.png" class="imagens-parceiros" id="petz-img" alt=""></a>
+
+                    </div>
+
+                    <div class="col-12 col-md-5 mx-auto d-flex justify-content-center align-items-center">
+                        <a href="https://www.petlove.com.br/?utm_medium=lojas_onlin&utm_source=sereslivres"
+                        target="_blank"  
+                    ><img src="img/handler-1-768x353-removebg-preview.png" class="imagens-parceiros"
+                                alt=""></a>
+                    </div>
+                </div>
+
+            
+
+
+
+            <!--Inicio do acordeao - FAQ-->
+            <div class="row">
+                <h3 class="text-center mt-4 nossa-historia" id="id-faq">Dúvidas Frequentes</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion acordeao-configs" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button acordeao-itens" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Como adotar um animal?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item’s accordion body.</strong> It is shown by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        element. These classes control the overall appearance, as well as the showing
+                                        and
+                                        hiding via CSS transitions. You can modify any of this with custom CSS or
+                                        overriding
+                                        our default variables. It’s also worth noting that just about any HTML can go
+                                        within
+                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed acordeao-itens" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Pensa em uma pergunta
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item’s accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It’s also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed acordeao-itens" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Pensa em uma pergunta
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        element. These classes control the overall appearance, as well as the showing
+                                        and
+                                        hiding via CSS transitions. You can modify any of this with custom CSS or
+                                        overriding
+                                        our default variables. It’s also worth noting that just about any HTML can go
+                                        within
+                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed acordeao-itens" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Pensa de novo
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It’s also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed acordeao-itens" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Pensa de novo
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        element. These classes control the overall appearance, as well as the showing
+                                        and
+                                        hiding via CSS transitions. You can modify any of this with custom CSS or
+                                        overriding
+                                        our default variables. It’s also worth noting that just about any HTML can go
+                                        within
+                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-
             </div>
+            
+
+             
+
+           
+
+
+
+
+
+
+
+            <!--Fechamento do container-->
+
         </div>
+            <!--Inicio do footer-->
+                <footer>
+
+                    <div class="row bck-footer d-flex" id="id-contato">
+                        <div class="col-12 col-md-4 mx-auto d-flex justify-content-center itens-footer">
+                            <img src="img/Marca Seres Livres_vertical_FINAL-03.png" class="logo-footer" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 text-center itens-footer">
+                            <ul>
+                                <li><a href="adocao.html">Adoções</a></li>
+                                <li><a href="">Doações</a></li>
+                                <li><a href="#id-historia">Nossa História</a></li>
+                                <li><a href="#id-parceiros">Parcerias</a></li>
+                                <li><a href="admin.html">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 mx-auto itens-footer">
+                            <div class="img-texto my-3"><img src="img/whatsapp.png" class="img-footer" alt=""><h6>(21)97228-5278</h5></div>
+                            <div class="img-texto my-3"><img src="img/instagram.png" class="img-footer" alt=""><h6>@sereslivres</h5></div>
+                            <div class="img-texto my-3"><img src="img/gmail.png" alt="" class="img-footer"><h6>casadeapoiosereslivres@gmail.com</h5></div>
+                        </div>
+                    </div>
 
 
+                    <div class="row">
+                        <div class="col-12 bck-copyright">
+                            <h5 class="text-center mt-2">Copyright © 2025 - Todos os direitos reservados.</h5>
+                        </div>
+                    </div>
 
+                </footer>
 
-
-        <!--Fechamento do container-->
     </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
 
+        <a href="https://wa.me/+5521972285278" target="_blank" class="whatsapp-flutuante">
+    <img src="img/whatsapp.png" alt="Fale Conosco pelo WhatsApp">
+</a>
 
-
-    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

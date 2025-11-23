@@ -1,8 +1,14 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 
 .navbar-header {
     background-color: #DDD9CE !important;
 }
+
+
 
 .nhistoria {
     width: 115pt;
@@ -66,6 +72,12 @@
     padding: 0rem 2.5rem;
 }
 
+.bck-parceiros {
+    background-color: #FFFAFA;
+    display: flex;
+    padding: 0rem 2.5rem;
+}
+
 .texto-historia {
     font-weight: 300;
 }
@@ -74,6 +86,10 @@
     display: flex;
     justify-content: space-between;
 
+}
+
+.background-cards {
+    background-color: #FFFAFA;
 }
 
 .acordeao-itens {
@@ -90,4 +106,234 @@
     border-right: none;
 }
 
+.botao-card {
+   background-color: rgb(253, 2, 43);
+    width: 3rem;
+    height: 3rem;
+    margin-top: 14rem;
+    border-radius: 3rem;
+
+}
+
+.botao-imagem-card {
+    background-color: #D97E96;
+    color: white;
+    width: 11rem;
+    padding: 0.5rem 0;
+    border-radius: 0.75rem;
+    font-family: 'Open Sans';
+    font-weight: bolder;
+    border-style: solid;
+    border-color: #D97E96;
+
+}
+
+.botao-imagem-card:hover {
+    background-color: white;
+    color: #D97E96;
+    border-style: solid;
+    border-color: #D97E96;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 1. Torna o CARD o referencial (position: relative) */
+.card {
+    position: relative;
+}
+
+/* 2. Define a posição FIXA do botão (position: absolute) */
+.botao-imagem-card {
+    /* Define o posicionamento absoluto */
+    position: absolute; 
+    
+    /* Posição vertical: 15px acima da base do card */
+    bottom: 15px; 
+    
+    /* Centraliza horizontalmente o botão */
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    /* Estilos de destaque do botão (mantidos ou ajustados) */
+    width: 80%; 
+    z-index: 5;
+    background-color: #D97E96; 
+    border-color: #D97E96;
+    color: white;
+    display: block; /* Para garantir o left/transform */
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-filtro.active {
+    border-style: solid;
+    border-color: black;
+}
+
+/* 3. Mantém a rolagem no parágrafo */
+.card-text {
+    /* Altura máxima para ativar a barra de rolagem */
+    max-height: 150px; 
+    /* Adiciona a barra de rolagem vertical */
+    overflow-y: auto; 
+    /* Adiciona um padding para que o texto não fique escondido atrás do botão fixo */
+    padding-bottom: 50px; 
+}
+
+.nome-fonte {
+    font-family: 'Roboto'
+}
+
+.texto-card-fonte {
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.imagens-parceiros {
+    width: 70%
+    
+}
+
+#petz-img {
+    width: 100%;
+}
+
+.logo-footer {
+    width: 80%;
+    margin-left: 90px;
+}
+
+.img-footer {
+    width: 35px;
+    display: flex;
+}
+
+h6 {
+    margin-top: 6px;
+}
+
+button a {
+    text-decoration: none;
+    
+}
+
+.img-texto {
+    display: flex;
+    gap: 10px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.bck-footer {
+    background-color: #DDD9CE;
+    margin-top: 3rem;
+}
+
+.itens-footer {
+    padding-top: 2rem;
+}
+
+.bck-copyright {
+    background-color: #534766;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.whatsapp-flutuante {
+    /* 1. Fixa o elemento na tela em relação ao viewport */
+    position: fixed;
+    
+    /* 2. Define a posição: canto inferior direito */
+    bottom: 20px; /* Distância de 20px da parte inferior */
+    right: 20px;  /* Distância de 20px da lateral direita */
+    
+    /* 3. Garante que fique por cima de outros elementos */
+    z-index: 1000;
+    
+    /* 4. Estilização básica para o link */
+    display: block; /* Para garantir o comportamento de bloco */
+    transition: transform 0.3s ease; /* Adiciona uma animação suave */
+}
+
+.whatsapp-flutuante img {
+    /* Estilo da imagem dentro do link */
+    width: 60px; /* Tamanho do ícone */
+    height: 60px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+
+}
+
+/* Efeito ao passar o mouse (opcional) */
+.whatsapp-flutuante:hover {
+    transform: scale(1.1); /* Aumenta um pouco ao passar o mouse */
+}
+
+.banner-adocao {
+    height: 20rem;
+}
+
+.img-doar {
+
+    height: 30rem;
+}
+
+.tamanho-img {
+    width: 100%;
+}
+
+.img-projeto {
+    height: 15rem;
+}
+
+.input-form {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.form-label {
+    text-align: center; 
+    display: block; 
+}
+
+
+.input-form:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 192, 203, 0.5); 
+    border-color: #ff69b4; 
+}
+
+
+.input-form:focus {
+    border-color: var(--bs-border-color); 
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 192, 203, 0.5);
+}
+
+.esqueceu-senha {
+    color: #555; 
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-top: 0.25rem;
+}
+
+
+.esqueceu-senha:hover {
+    color: #D3869E; 
+    text-decoration: underline;
+}
 
